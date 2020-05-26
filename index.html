@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://use.fontawesome.com/f0aeb2bae0.js"></script>
+    <title>Title</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light py-3 shadow p-3 mb-2 bg-white fixed-top">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">Logo</a>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+
+        <form class="form-inline my-2 my-lg-0 justify-content-between w-75 ml-auto">
+            <div class="form-group has-search col-8">
+                <span class="fa fa-search form-control-feedback"></span>
+                <input class="form-control mr-sm-2 col-12 search_text" type="search" placeholder="Search" aria-label="Search">
+            </div>
+            <span class="mr-sm-2"><i class="fa fa-bell-o"></i></span>
+            <div><i class="fa fa-user-circle-o"></i></div>
+            <div class="flex-column">
+                <div>Seun James</div>
+                <div><a href="">Logout</a></div>
+            </div>
+        </form>
+    </div>
+</nav>
+<div class="main-body col-sm-12 justify-content-between pl-0 m-0">
+    <!-- SideBar -->
+    <div class="d-inline-block side-bar m-0 p-0 text-center position-fixed">
+        <div class="side-bar-content w-100 pt-2 pb-2 border-bottom-1">
+            <div class="mt-2"><h6>Boldseams</h6></div>
+        </div>
+        <div class="side-bar-content w-100 pt-2 pb-2">
+            <div class="mx-auto side-bar-icon-div mb-1">
+                <i class="fa fa-dashboard"></i>
+            </div>
+            <span>Dashboard</span>
+        </div>
+
+        <div class="side-bar-content w-100 pt-2 pb-2">
+            <div class="mx-auto side-bar-icon-div mb-1">
+                <i class="fa fa-money"></i>
+            </div>
+            <span>Record Sale</span>
+        </div>
+
+        <div class="side-bar-content w-100 pt-2 pb-2">
+            <div class="mx-auto side-bar-icon-div mb-1">
+                <i class="fa fa-send"></i>
+            </div>
+            <span>Record Expense</span>
+        </div>
+
+        <div class="side-bar-content w-100 pt-2 pb-2">
+            <div class="mx-auto side-bar-icon-div mb-1">
+                <i class="fa fa-search"></i>
+            </div>
+            <span>View Sales</span>
+        </div>
+
+        <div class="side-bar-content w-100 pt-2 pb-2">
+            <div class="mx-auto side-bar-icon-div mb-1">
+                <i class="fa fa-cube"></i>
+            </div>
+            <span>View Expenses</span>
+        </div>
+
+        <div class="side-bar-content w-100 pt-2 pb-2">
+            <div class="mx-auto side-bar-icon-div mb-1">
+                <i class="fa fa-plus-circle"></i>
+            </div>
+            <span>More Actions</span>
+        </div>
+    </div>
+    <!-- Body -->
+    <div class="content pl-3 pr-3 pt-2 ">
+        <div class="expense-title-bar col-12 d-flex flex-column justify-content-center">
+            <div>Record Expenses</div>
+        </div>
+        <!--<table class="table mt-2">-->
+            <!--<thead class="thead-dark">-->
+            <!--<tr>-->
+                <!--<th scope="col">#</th>-->
+                <!--<th scope="col">First</th>-->
+                <!--<th scope="col">Last</th>-->
+                <!--<th scope="col">Handle</th>-->
+            <!--</tr>-->
+            <!--</thead>-->
+        <!--</table>-->
+        <div class="card table-title mt-2">
+            <div class="card-title my-auto pl-2 pr-2">
+                <div class="d-flex flex-row justify-content-between">
+                    <div class="icon">  </div>
+                    <div class="count"> # </div>
+                    <div class="item"> Item </div>
+                    <div class="unit"> Unit </div>
+                    <div class="unit-price"> Unit Price </div>
+                    <div class="qty"> Quantity </div>
+                    <div class="amt"> Amount </div>
+                    <div class="amt_paid"> Amount Paid </div>
+                    <div class="vendor"> Vendor </div>
+                    <div class="delete"> </div>
+                </div>
+            </div>
+        </div>
+        <div class="card table-item mt-2">
+            <div class="card-title my-auto pl-2 pr-2">
+                <div class="d-flex flex-row justify-content-between align-items-md-center">
+                    <div class="icon"> <i class="fa fa-th-large" aria-hidden="true"></i></div>
+                    <div class="count"> 1 </div>
+                    <div class="item"> Embroidery Materials </div>
+                    <div class="unit pr-2">
+                        <select class="input_select form-control">
+                            <option selected>Yard</option>
+                            <option>Dozen</option>
+                        </select>
+                    </div>
+                    <div class="unit-price pr-2">
+                            <input type="text" class="form-control price">
+                    </div>
+                    <div class="qty pr-2">
+                        <input type="text" class="form-control qty_price">
+                    </div>
+                    <div class="amt"> &#x20A6;  1,500 </div>
+                    <div class="amt_paid"> &#x20A6; 1,500(Cash) </div>
+                    <div class="vendor"> Becky Tailors  </div>
+                    <div class="btn delete"> <i class="fa fa-trash"></i>  </div>
+                </div>
+            </div>
+        </div>
+        <div class="card table-item mt-2">
+            <div class="card-title my-auto pl-2 pr-2">
+                <div class="d-flex flex-row justify-content-between align-items-md-center">
+                    <div class="icon"> <i class="fa fa-th-large" aria-hidden="true"></i></div>
+                    <div class="count"> 2 </div>
+                    <div class="item"> Embroidery Materials </div>
+                    <div class="unit pr-2">
+                        <select id="ee" class="input_select form-control">
+                            <option selected>Yard</option>
+                            <option>Dozen</option>
+                        </select>
+                    </div>
+                    <div class="unit-price pr-2">
+                        <input type="text" class="form-control price">
+                    </div>
+                    <div class="qty pr-2">
+                        <input type="text" class="form-control qty_price">
+                    </div>
+                    <div class="amt"> &#x20A6;  1,500 </div>
+                    <div class="amt_paid"> &#x20A6; 1,500(Cash) </div>
+                    <div class="vendor"> Becky Tailors  </div>
+                    <div class="btn delete"> <i class="fa fa-trash"></i>  </div>
+                </div>
+            </div>
+        </div>
+        <div class="card table-item mt-2">
+            <div class="card-title my-auto pl-2 pr-2">
+                <div class="d-flex flex-row justify-content-between align-items-md-center">
+                    <div class="icon"> <i class="fa fa-th-large" aria-hidden="true"></i></div>
+                    <div class="count"> 3 </div>
+                    <div class="item"> Embroidery Materials </div>
+                    <div class="unit pr-2">
+                        <select id="ff" class="input_select form-control">
+                            <option selected>Yard</option>
+                            <option>Dozen</option>
+                        </select>
+                    </div>
+                    <div class="unit-price pr-2">
+                        <input type="text" class="form-control price">
+                    </div>
+                    <div class="qty pr-2">
+                        <input type="text" class="form-control qty_price">
+                    </div>
+                    <div class="amt"> &#x20A6;  1,500 </div>
+                    <div class="amt_paid"> &#x20A6; 1,500(Cash) </div>
+                    <div class="vendor"> Becky Tailors  </div>
+                    <div class="btn delete"> <i class="fa fa-trash"></i>  </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- End of Tables Items -->
+        <button class="btn bg-light my-4 add_btn justify-content-center py-auto">  <span class="add_ico"><i class="fa fa-plus-circle"></i></span> Add Another Expense </button>
+        <div class="total d-flex justify-content-between pr-2 pl-2">
+            <div class="my-auto">Cash: &#x20A6; 3,500</div>
+            <div class="my-auto">Bank: &#x20A6; 1,500</div>
+            <div class="my-auto">Credit: &#x20A6; 4,000</div>
+            <div class="my-auto font-weight-bold">Total: &#x20A6; 9,000</div>
+        </div>
+        <div class="question d-flex justify-content-start mt-3 pl-2">
+            <div class="text-qst mr-5 my-auto">Have you received the goods/services?</div>
+            <div class="my-auto">
+                <select class="input_select form-control">
+                    <option selected>Yes</option>
+                    <option>No</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="outstanding d-flex justify-content-between mt-3 pl-2 pr-2">
+            <div class="text-qst mr-5 my-auto">Outstanding Payment: <span class="font-weight-bold underline_dark">Becky Tailors(&#x20A6; 2,500)</span></div>
+            <div class="my-auto">  Payment Due: <span class="font-weight-bold underline_dark">Today(April 23, 2020)</span> </div>
+            <div class="my-auto underline"> Advanced </div>
+        </div>
+        <div class="outstanding d-flex justify-content-between mt-3 pl-2 pr-2">
+            <div class="text-qst mr-5 my-auto">Outstanding Payment: <span class="font-weight-bold underline_dark">Suswam Fabrics(&#x20A6; 2,500)</span></div>
+            <div class="my-auto">Payment Due: <span class="underline_dark">Today(April 23, 2020)</span> </div>
+            <div class="my-auto underline"> Advanced </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
